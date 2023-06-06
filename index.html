@@ -31,7 +31,7 @@
         <main class="text-center d-flex flex-column align-items-center justify-content-center h-100">
             <div class="my_input-container d-flex align-items-center gap-4">
                 <label for="inputListItem">Inserisci valore:</label>
-                <input type="text" id="inputListItem" v-model="inputValue">
+                <input type="text" id="inputListItem" v-model="inputValue" @keyup.enter="addItem ()">
                 <button class="btn btn-warning" @click="addItem()">Submit</button>
             </div>
 
