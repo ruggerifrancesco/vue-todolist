@@ -26,5 +26,12 @@ createApp({
                 console.log(this.todoItems)
             }
         },
+        removeItem(item) {
+            const index = this.todoItems.indexOf(item);
+            if (index > -1) {
+              this.todoItems.splice(index, 1);
+              this.completedItems.push(item);
+            }
+        },
     }
 }).mount('#app')
