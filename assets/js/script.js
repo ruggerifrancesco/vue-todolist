@@ -41,7 +41,7 @@ createApp({
             const index = this.todoItems.indexOf(item);
             if (index > -1) {
                 this.todoItems.splice(index, 1);
-                this.completedItems.push(item);
+                this.completedItems.push({text: item.text, done: true});
                 item.done = true;
 
                 // Test for pushing inside Complete Items List
