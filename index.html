@@ -43,6 +43,9 @@
                     <ol class="list-group list-group-numbered p-3 text-start">
                         <li class="list-group-item" v-for="item in todoItems" :key="item">
                             {{ item }}
+                            <span>
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
                         </li>
                     </ol>
 
