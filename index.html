@@ -40,8 +40,8 @@
                   <div class="col border-black border-1 border">
                     <h3 class="border-black border-1 border-bottom m-0">To Do</h3>
 
-                    <ol class="list-group list-group-numbered p-3 text-start">
-                        <li class="list-group-item d-flex align-items-center justify-content-between" v-for="item in todoItems" :key="item">
+                    <ol class="list-group p-3 text-start">
+                        <li class="list-group-item d-flex align-items-center justify-content-between my_todo-list" v-for="item in todoItems" :key="item">
                             {{ item }}
                             <span class="my_item-removal text-danger">
                                 <i class="fa-solid fa-xmark"></i>

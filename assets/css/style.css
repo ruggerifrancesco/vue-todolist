@@ -1,3 +1,17 @@
 * {
     /* outline: 1px solid red; */
 }
+.my_todo-list {
+    cursor: pointer;
+}
+.my_todo-list:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.my_item-removal {
+    display: none;
+}
+
+.my_todo-list:hover .my_item-removal {
+    display: block;
+}
