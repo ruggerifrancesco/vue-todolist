@@ -22,13 +22,29 @@
 
     <!-- Personal CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
 <body>
     <script src="assets/js/script.js" type="module"></script>
 
-    <section id="app">
-        {{ messagePlaceholder }}
+    <section id="app" class="vh-100">
+        <main class="text-center d-flex flex-column align-items-center justify-content-center h-100">
+            <div class="my_input-container d-flex gap-4">
+                <label for="inputListItem">Inserisci valore:</label>
+                <input type="text" id="inputListItem">
+            </div>
+
+            <div class="container mt-4">
+                <div class="row">
+                  <div class="col">
+                    Lista 1
+                  </div>
+                  <div class="col">
+                    Lista 2
+                  </div>
+                </div>
+              </div>
+        </main>
     </section>
 </body>
 </html>
