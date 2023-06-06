@@ -12,7 +12,10 @@ createApp({
     },
     methods: {
         addItem () {
-            if (this.)
+            if (this.inputValue !== '') {
+                this.todoItems.push(this.inputValue);
+                this.inputValue = '';
+            }
         }
     }
 }).mount('#app')
