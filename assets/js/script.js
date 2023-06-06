@@ -15,6 +15,7 @@ createApp({
             if (this.inputValue !== '') {
                 this.todoItems.push(this.inputValue);
                 this.inputValue = '';
+                console.log(todoItems)
             }
         }
     }
