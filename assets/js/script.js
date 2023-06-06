@@ -4,8 +4,14 @@ createApp({
     data() {
         return {
           messagePlaceholder: 'Placeholder, Vue working!',
-          todoItems: [],
-          completedItems: [],
+          todoItems: [
+            'Andare in palestra',
+            'Fare la spesa',
+            'Riordinare la camera'
+          ],
+          completedItems: [
+            'Fare i compiti'
+          ],
           checkItemCompleted: false,
           inputValue: '',
         }
@@ -15,8 +21,10 @@ createApp({
             if (this.inputValue !== '') {
                 this.todoItems.push(this.inputValue);
                 this.inputValue = '';
-                console.log(todoItems)
+
+                // Test for pushinginside array
+                console.log(this.todoItems)
             }
-        }
+        },
     }
 }).mount('#app')
