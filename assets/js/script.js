@@ -30,7 +30,7 @@ createApp({
     methods: {
         addItem () {
             if (this.inputValue !== '') {
-                this.todoItems.push(this.inputValue);
+                this.todoItems.push({text: this.inputValue, done: false});
                 this.inputValue = '';
 
                 // Test for pushing inside To Do Items List
