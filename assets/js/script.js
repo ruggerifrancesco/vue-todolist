@@ -5,14 +5,25 @@ createApp({
         return {
           messagePlaceholder: 'Placeholder, Vue working!',
           todoItems: [
-            'Andare in palestra',
-            'Fare la spesa',
-            'Riordinare la camera'
+            {
+                text: 'Andare in palestra',
+                done: false,
+            },
+            {
+                text: 'Fare la spesa',
+                done: false,
+            },
+            {
+                text: 'Riordinare la camera',
+                done: false,
+            },
           ],
           completedItems: [
-            'Fare i compiti'
+            {
+                text: 'Fare i compiti',
+                done: true,
+            },
           ],
-          checkItemCompleted: false,
           inputValue: '',
         }
     },
