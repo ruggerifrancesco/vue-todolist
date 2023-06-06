@@ -26,7 +26,7 @@ createApp({
                 console.log(this.todoItems)
             }
         },
-        removeItem(item) {
+        removeItem (item) {
             const index = this.todoItems.indexOf(item);
             if (index > -1) {
                 this.todoItems.splice(index, 1);
@@ -36,5 +36,15 @@ createApp({
                 console.log(this.completedItems)
             }
         },
+        redoItem (item) {
+            const index = this.completedItems.indexOf(item);
+            if (index > -1) {
+                this.completedItems.splice(index, 1);
+                this.todoItems.push(item);
+
+                // Test for pushing inside Complete Items List
+                console.log(this.todoItems)
+            }
+        }
     }
 }).mount('#app')
