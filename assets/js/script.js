@@ -7,9 +7,12 @@ createApp({
           todoItems: [],
           completedItems: [],
           checkItemCompleted: false,
+          inputValue: '',
         }
     },
     methods: {
-    
+        addItem () {
+            if (this.)
+        }
     }
 }).mount('#app')
