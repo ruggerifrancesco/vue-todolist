@@ -56,7 +56,7 @@
                     <ul class="list-group p-3 text-start">
                         <li class="list-group-item d-flex align-items-center justify-content-between my_completed-list" 
                             v-for="item in completedItems" :key="item" @click="redoItem(item)">
-                            <span class="text-decoration-line-through" :class="{ 'text-decoration-line-through': checkItemCompleted }">
+                            <span class="text-decoration-line-through">
                                 {{ item.text }}
                             </span>
                             <span class="my_item-redo text-warning">
