@@ -1,17 +1,34 @@
 * {
     /* outline: 1px solid red; */
 }
-.my_todo-list {
+.my_todo-list,
+.my_completed-list {
     cursor: pointer;
 }
-.my_todo-list:hover {
+.my_todo-list:hover,
+.my_completed-list:hover {
     background-color: rgb(243, 243, 243);
 }
 
-.my_item-removal {
+.my_item-removal,
+.my_item-redo {
     display: none;
 }
 
-.my_todo-list:hover .my_item-removal {
+.my_todo-list:hover .my_item-removal,
+.my_completed-list:hover .my_item-redo {
     display: block;
+}
+
+.my_item-redo {
+    animation: rotate 0.4s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
 }
