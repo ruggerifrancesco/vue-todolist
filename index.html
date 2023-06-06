@@ -50,7 +50,9 @@
                   <div class="col border-black border-1 border">
                     <h3 class="border-black border-1 border-bottom m-0">Completed</h3>
                     <ol class="list-group list-group-numbered p-3 text-start">
-                        <li class="list-group-item"></li>
+                        <li class="list-group-item"  v-for="item in completedItems" :key="item">
+                            {{ item }}
+                        </li>
                     </ol>
                   </div>
                 </div>
