@@ -22,15 +22,18 @@ createApp({
                 this.todoItems.push(this.inputValue);
                 this.inputValue = '';
 
-                // Test for pushinginside array
+                // Test for pushing inside To Do Items List
                 console.log(this.todoItems)
             }
         },
         removeItem(item) {
             const index = this.todoItems.indexOf(item);
             if (index > -1) {
-              this.todoItems.splice(index, 1);
-              this.completedItems.push(item);
+                this.todoItems.splice(index, 1);
+                this.completedItems.push(item);
+
+                // Test for pushing inside Complete Items List
+                console.log(this.completedItems)
             }
         },
     }
