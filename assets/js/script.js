@@ -31,6 +31,7 @@ createApp({
             if (index > -1) {
                 this.todoItems.splice(index, 1);
                 this.completedItems.push(item);
+                this.checkItemCompleted = true;
 
                 // Test for pushing inside Complete Items List
                 console.log(this.completedItems)
